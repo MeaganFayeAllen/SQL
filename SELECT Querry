@@ -1,0 +1,9 @@
+/* 
+CREATED BY: MEAGAN-FAYE ALLEN
+CREATED ON:05/22/2023
+DESCRIPTION: This script selects all records from the albums TABLE
+*/
+SELECT
+  *
+FROM
+  albums;
