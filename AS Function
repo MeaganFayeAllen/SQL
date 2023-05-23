@@ -1,12 +1,14 @@
-/*CREATED BY: MEAGAN-FAYE ALLEN
+/*
+CREATED BY: MEAGAN-FAYE ALLEN
 CREATED ON: 05/22/2023
 DESCRIPTION: Rename fields for 'FirstName', 'LastName', 'Address, and 'Phone'
 */
 SELECT
-	FirstName 'First Name',
-	LastName 'Last Name',
-	Address 'Postal Address',
+	FirstName AS 'First Name',
+	LastName AS 'Last Name',
+	Address AS 'Postal Address',
 	Email,
-	Phone CELL
+	Phone AS 'Cell'
 FROM
   customers;
+  
