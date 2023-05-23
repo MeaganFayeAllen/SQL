@@ -1,0 +1,13 @@
+/*
+CREATED BY: MEAGAN-FAYE ALLEN
+CREATED ON: 05/23/2023
+DESCRIPTION: Selects the first name, last name, and email from the customers table, ordered by Last name in ascending order
+*/
+SELECT
+	FirstName 'First Name',
+	LastName 'Last Name',
+	Email
+FROM
+	customers
+ORDER BY
+	LastName ASC;
