@@ -1,0 +1,12 @@
+/*
+CREATED BY: MEAGAN-FAYE ALLEN
+CREATED ON: 05/22/2023
+DESCRIPTION: Select all customer first, last name and email address from the customers table as requested by Customer Service for the
+	purpose of running a promotional advertisement
+*/
+SELECT
+FirstName,
+LastName,
+Email
+FROM
+customers;
