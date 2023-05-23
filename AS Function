@@ -1,0 +1,12 @@
+/*CREATED BY: MEAGAN-FAYE ALLEN
+CREATED ON: 05/22/2023
+DESCRIPTION: Rename fields for 'FirstName', 'LastName', 'Address, and 'Phone'
+*/
+SELECT
+	FirstName 'First Name',
+	LastName 'Last Name',
+	Address 'Postal Address',
+	Email,
+	Phone CELL
+FROM
+  customers;
