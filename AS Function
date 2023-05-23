@@ -2,6 +2,8 @@
 CREATED BY: MEAGAN-FAYE ALLEN
 CREATED ON: 05/22/2023
 DESCRIPTION: Rename fields for 'FirstName', 'LastName', 'Address, and 'Phone'
+	Unneccesary in SQLite to include the "AS" function within the code. If you remove the "AS" and run the code, the code will run the same. Quotations are neccesarry when renaming a field 
+	with multi words. If single word rename, the '' can be removed and the code will run the same
 */
 SELECT
 	FirstName AS 'First Name',
