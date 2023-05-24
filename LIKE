@@ -1,0 +1,16 @@
+/* 
+CREATED BY: MEAGAN-FAYE ALLEN
+CREATED ON: 05/24/2023
+DESCRIPTION: 	Pull Invoices for  the customer who's BillingCity starts with 'T' from the invoices table
+*/
+SELECT
+	InvoiceDate,
+	BillingAddress,
+	BillingCity,
+	total
+FROM
+	invoices
+WHERE
+	BillingCity LIKE 'T%'
+ORDER BY
+	total
