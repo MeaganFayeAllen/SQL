@@ -15,3 +15,22 @@ WHERE
 	total = 1.98
 ORDER BY
 	InvoiceDate
+
+
+/* 
+CREATED BY: MEAGAN-FAYE ALLEN
+CREATED ON: 05/24/2023
+DESCRIPTION: Pull Invoices for  the customer who's total invoices are greater than 1.98 from the invoices table
+*/
+SELECT
+	InvoiceDate,
+	BillingAddress,
+	BillingCity,
+	total
+FROM
+	invoices
+WHERE
+	total > 1.98
+ORDER BY
+	InvoiceDate
+	
