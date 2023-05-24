@@ -1,1 +1,16 @@
-
+/* 
+CREATED BY: MEAGAN-FAYE ALLEN
+CREATED ON: 05/24/2023
+DESCRIPTION: Pull Invoices for  the customer who's total invoices fall between 1.98 and 5.00 from the invoices table
+*/
+SELECT
+	InvoiceDate,
+	BillingAddress,
+	BillingCity,
+	total
+FROM
+	invoices
+WHERE
+	total BETWEEN 1.98 AND 5.00
+ORDER BY
+	InvoiceDate
