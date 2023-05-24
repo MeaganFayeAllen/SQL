@@ -1,0 +1,17 @@
+/* 
+CREATED BY: MEAGAN-FAYE ALLEN
+CREATED ON: 05/24/2023
+DESCRIPTION: 	Pull  the top highest Invoices from January 1, 2009 through December 31, 2009 from the invoices table
+*/
+SELECT
+	InvoiceDate,
+	BillingAddress,
+	BillingCity,
+	total
+FROM
+	invoices
+WHERE
+	InvoiceDate BETWEEN '2009-01-01 00:00:00' AND '2009-12-31 00:00:00'
+ORDER BY
+	total DESC
+LIMIT 10
