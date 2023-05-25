@@ -1,0 +1,23 @@
+/* 
+CREATED BY: MEAGAN-FAYE ALLEN
+CREATED ON: 05/24/2023
+DESCRIPTION: In the invoices table, create a new field labeled labeled Salestype that labels invoices Domestic Sales from the USA and Foreign Sales from other countries
+*/
+SELECT
+	InvoiceDate,
+	BillingAddress,
+	BillingCity,
+	BillingCountry,
+	total,
+	CASE
+	WHEN BillingCountry = 'USA' THEN 'Domestic Sales'
+	ELSE 'Foreign Sales'
+	END AS 'Salestype'
+FROM
+	invoices
+WHERE
+	total > 15.00
+	AND
+	 Salestype = 'Domestic Sales'
+ORDER BY
+	'Sales Type'
