@@ -1,3 +1,9 @@
+/*
+CREATED BY: MEAGAN-FAYE ALLEN
+CREATED ON: 05/25/2023
+DESCRIPTION: Join together fields Firstname and Lastname 
+	and label as Full Name from the customers table where the customer's country is the USA
+*/
 SELECT
 	FirstName,
 	LastName,
