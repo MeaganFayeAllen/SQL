@@ -1,0 +1,12 @@
+/*
+CREATED BY: MEAGAN-FAYE ALLEN
+CREATED ON: 05/22/2023
+DESCRIPTION: Find the length of characters in the postalcode field from the customers table
+*/
+SELECT
+	PostalCode,
+	LENGTH(PostalCode) AS ' Postal Code Length'
+FROM
+	customers
+WHERE
+	Country = 'USA'
