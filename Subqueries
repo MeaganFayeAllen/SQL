@@ -1,20 +1,26 @@
 /* 
 CREATED BY: MEAGAN-FAYE ALLEN
 CREATED ON:05/22/2023
-DESCRIPTION: This script finds all invoices that exceed the average invoice amount generated in 2010
+DESCRIPTION: This script finds all USA invoices that exceed the average invoice amount generated in 2010 AND provide customer's names of the invoiceS
 */
 SELECT
 InvoiceDate,
-total
+total,
+BillingCountry
 FROM
-invoices
+	invoices AS 'i'
+INNER JOIN
+	customers AS 'c'
+ON
+	i.CustomerId = c.CustomerId
 WHERE
 total >
-(SELECT
-AVG(TOTAL) AS '2010 Average Invoice'
-FROM
+(select
+avg(TOTAL) as '2010 Average Invoice'
+from
 invoices
-WHERE
-	InvoiceDate BETWEEN '2010-01-01' AND '2010-12-31')
+where
+	InvoiceDate between '2010-01-01' AND '2010-12-31')
+AND BillingCountry = 'USA'
 ORDER BY
 	Total DESC
